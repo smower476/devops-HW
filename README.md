@@ -21,3 +21,19 @@
 git clone [https://github.com/smower476/devops-HW.git](https://github.com/smower476/devops-HW.git)
 cd devops-HW
 ```
+
+Сборка проекта
+```bash
+docker compose up --build -d
+```
+
+## Инструкция по использованию
+Получение всех элементов (GET)
+```bash
+curl http://localhost:8080/items
+```
+
+Добавить новый элемент
+```bash
+curl -X POST "http://localhost:8080/add?name=NewCppItem"
+```
